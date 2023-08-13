@@ -26,6 +26,7 @@ struct ImageViewBuilder {
             .forEach {
                 imageView.backgroundColor = $0.backgroundColor
                 imageView.clipsToBounds = $0.clipsToBounds
+                imageView.layer.borderWidth = $0.layer.borderWidth
             }
         return imageView
     }
